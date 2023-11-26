@@ -1,0 +1,74 @@
+:root {
+  --primary: rgb(110, 55, 7);
+  --background: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--background);
+  color: #fff;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.4rem 7%;
+  background-color: rgba(246, 55, 21, 0.8);
+  /* border-bottom: (var(--primary)); */
+  z-index: 9999;
+}
+
+.navbar .navbar-logo {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff;
+  font-style: italic;
+}
+
+.navbar .navbar-nav a {
+  color: #fff;
+  display: inline-block;
+  font-size: 15px;
+  margin: 16px;
+}
+.navbar .navbar-nav a:hover {
+  color: var(--primary);
+}
+.navbar .navbar-extra a {
+  color: #fff;
+  margin: 15px;
+}
+
+#menu {
+  display: inline-block;
+}
+
+/* queries */
+/* laptop */
+@media (max-width: 1366px) {
+  html {
+    font-size: 75%;
+  }
+}
+/* tablet */
+@media (max-width: 758px) {
+  html {
+    font-size: 62%;
+  }
+}
+/* mobile */
+@media (max-width: 450px) {
+  html {
+    font-size: 40%;
+  }
+}
