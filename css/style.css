@@ -15,6 +15,7 @@ body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background-color: var(--background);
   color: #fff;
+  min-height: 2000px;
 }
 
 /* Navbar */
@@ -24,7 +25,11 @@ body {
   align-items: center;
   padding: 1.4rem 7%;
   background-color: rgba(246, 55, 21, 0.8);
-  /* border-bottom: (var(--primary)); */
+  border-bottom: 1px solid #af6565;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   z-index: 9999;
 }
 
@@ -49,9 +54,18 @@ body {
   margin: 15px;
 }
 
-#menu {
-  display: inline-block;
+/* landing element */
+.landing {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-image: url("../css/img/header\ Lombok\ Geni-3.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
+
+.landing::after
 
 /* queries */
 /* laptop */
